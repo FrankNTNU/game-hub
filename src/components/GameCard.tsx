@@ -10,7 +10,7 @@ interface GameCardProps {
 const GameCard = ({ game }: GameCardProps) => {
   return (
     <GameCardContainer>
-      <Card width='300px' borderRadius={10} overflow='hidden'>
+      <Card>
         <Image
           src={getCroppedImageUrl(game.background_image)}
           alt={game.name}
@@ -24,7 +24,7 @@ const GameCard = ({ game }: GameCardProps) => {
             <CriticScore score={game.metacritic} />
           </HStack>
         </CardBody>
-      </Card>{' '}
+      </Card>
     </GameCardContainer>
   );
 };
