@@ -9,10 +9,10 @@ import { Platform } from './hooks/useGames';
 import SortSelector from './components/SortSelector';
 import GameHeading from './components/GameHeading';
 export interface GameQuery {
-  genre?: Genre | null;
-  platform?: Platform | null;
-  sortOrder?: string | null;
-  searchText?: string | null;
+  genre: Genre | null;
+  platform: Platform | null;
+  sortOrder: string | null;
+  searchText: string | null;
 }
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);

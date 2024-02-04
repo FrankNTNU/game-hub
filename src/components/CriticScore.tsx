@@ -1,6 +1,6 @@
 import { Badge } from '@chakra-ui/react';
 
-interface CriticScoreProps {
+interface Props {
   score: number;
 }
 const CriticScore = ({ score }: Props) => {
